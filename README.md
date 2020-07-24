@@ -25,14 +25,30 @@
 </p>
 
 <p align="center">
-  <a href="#dev-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#dev-rotas-da-aplicação">Rotas da aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#dev-específicação-dos-testes">Especificação de testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-e-recursos">Tecnologias e Recursos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#rotas-da-aplicação">Rotas da aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#específicação-dos-testes">Especificação de testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#instalação-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#arquivo-do-insomnia">Arquivo do Insomnia</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
-## :dev: Sobre o desafio
+Instalação e execução
+
+## Tecnologias e recursos
+
+- [Node.js](https://nodejs.org/)
+- [Nodemon](https://github.com/remy/nodemon)
+- [Express](https://expressjs.com/)
+- [JEST](https://github.com/facebook/jest)
+- [Insomnia](https://insomnia.rest/)
+- [uuidv4](https://github.com/thenativeweb/uuidv4/)
+- [SuperTest](https://github.com/visionmedia/supertest)
+- [CORS](https://github.com/expressjs/cors)
+
+## Sobre o desafio
 
 Essa será uma aplicação para armazenar repositórios do seu portfólio, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
 
@@ -40,7 +56,7 @@ Essa será uma aplicação para armazenar repositórios do seu portfólio, que i
   <img  src="./assets/nodejs-example.png">
 </p>
 
-### :dev: Rotas da aplicação
+### Rotas da aplicação
 
 - **`POST /repositories`**: A rota deve receber `title`, `url` e `techs` dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: `{ id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }`; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
 
@@ -52,7 +68,7 @@ Essa será uma aplicação para armazenar repositórios do seu portfólio, que i
 
 - **`POST /repositories/:id/like`**: A rota deve aumentar o número de likes do repositório específico escolhido através do `id` presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
 
-### :dev: Específicação dos testes
+### Específicação dos testes
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
 
@@ -79,6 +95,28 @@ Para esse desafio temos os seguintes testes:
 ## :calendar: Entrega
 
 Esse desafio foi entregue na plataforma Skylab - Rocketseat.
+
+## Instalação e execução
+
+```bash
+# Clone esse repositório
+$ git clone https://github.com/cleyton1986/rocketseat-gostack-desafio02-conceitos-nodejs
+
+# Entre no diretório
+$ cd rocketseat-gostack-desafio02-conceitos-nodejs
+
+# Instale as dependências
+$ yarn
+
+# Rode a aplicação
+$ yarn dev
+
+# Rode os testes
+$ yarn test
+```
+
+## Arquivo do Insomnia
+Caso queira executar os testes através do Insomnia, importe o arquio .json que está na pasta de "resources", rode o servidor com o comando **yarn dev** no seu terminal e teste as rotas.
 
 ## :memo: Licença
 
