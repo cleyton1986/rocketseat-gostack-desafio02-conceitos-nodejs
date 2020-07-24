@@ -35,8 +35,6 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-Instalação e execução
-
 ## Tecnologias e recursos
 
 - [Node.js](https://nodejs.org/)
