@@ -116,7 +116,7 @@ $ yarn test
 ```
 
 ## Arquivo do Insomnia
-Caso queira executar os testes através do Insomnia, importe o arquio .json que está na pasta de "resources", rode o servidor com o comando **yarn dev** no seu terminal e teste as rotas.
+Caso queira executar os testes através do Insomnia, importe o arquivo .json que está na pasta de "resources", rode o servidor com o comando **yarn dev** no seu terminal e teste as rotas.
 
 ## :memo: Licença
 
