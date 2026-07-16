@@ -9,12 +9,20 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "uuidv4": "^6.0.7"
+    "express": "^4.22.2",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "jest": "^25.2.6",
-    "nodemon": "^2.0.2",
+    "jest": "^30.4.2",
+    "nodemon": "^3.1.14",
     "supertest": "^4.0.2"
+  },
+  "overrides": {
+    "uuidv4": {
+      "uuid": "^11.1.1"
+    }
+  },
+  "resolutions": {
+    "uuidv4/uuid": "^11.1.1"
   }
 }
